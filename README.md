@@ -1,6 +1,6 @@
 # Projects
 
 Final Project Proposal
-System Title: YouTuDe: Your Tourist Guide
+\nSystem Title: YouTuDe: Your Tourist Guide
 
 Project Proponents:
