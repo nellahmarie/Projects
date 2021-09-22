@@ -1,15 +1,20 @@
 # Projects
 
 Final Project Proposal
+
 System Title: YouTuDe: Your Tourist Guide
+
 Project Proponents:
+
 Jonathan – Hustler
 Jhonnysar – Hacker
 Nellah – Hipster
 Angel – Tester
 
 Description: (Scope) Functionalities
+
 Scope
+
 Client-Side
     1. Create Account
     2. Login
@@ -24,6 +29,7 @@ Client-Side
     5. Make a request to travel from Selected Famous Spot/s
     6. Can cancel his/her request from the list
     7. View Driver’s info who’s currently doing the service
+
 
 Driver-Side
     1. Create Account
@@ -40,6 +46,7 @@ Driver-Side
     5. Manage/Serve Client’s request
     6. View the status of the current request
     
+
 Manager-Side
     1. Login
     2. View Details
