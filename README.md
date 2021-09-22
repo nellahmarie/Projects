@@ -6,10 +6,10 @@ System Title: YouTuDe: Your Tourist Guide
 
 Project Proponents:
 
-Jonathan – Hustler
-Jhonnysar – Hacker
-Nellah – Hipster
-Angel – Tester
+*Jonathan – Hustler
+*Jhonnysar – Hacker
+*Nellah – Hipster
+*Angel – Tester
 
 Description: (Scope) Functionalities
 
