@@ -1,6 +1,7 @@
 # Projects
 
-Final Project ProposalSystem Title: YouTuDe: Your Tourist Guide
+Final Project Proposal
+System Title: YouTuDe: Your Tourist Guide
 Project Proponents:
 Jonathan – Hustler
 Jhonnysar – Hacker
