@@ -10,3 +10,15 @@ C:\Users\gubot\source\repos\YouTuDe\YouTuDe\obj\Debug\YouTuDe.exe
 C:\Users\gubot\source\repos\YouTuDe\YouTuDe\obj\Debug\YouTuDe.pdb
 C:\Users\gubot\source\repos\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Account.Account.resources
 C:\Users\gubot\source\repos\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Client.Dashboard.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\bin\Debug\YouTuDe.exe.config
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\bin\Debug\YouTuDe.exe
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\bin\Debug\YouTuDe.pdb
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.csproj.AssemblyReference.cache
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Account.Account.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Client.Dashboard.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Login.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Properties.Resources.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.csproj.GenerateResource.cache
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.csproj.CoreCompileInputs.cache
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.exe
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.pdb
