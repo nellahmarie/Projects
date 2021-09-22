@@ -3,7 +3,7 @@
 **Final Project Proposal**  
 System Title: YouTuDe: Your Tourist Guide  
 Project Proponents:  
-        Jonathan – Hustler  
+&nbsp;&nbsp;Jonathan – Hustler  
         Jhonnysar – Hacker  
         Nellah – Hipster  
         Angel – Tester  
