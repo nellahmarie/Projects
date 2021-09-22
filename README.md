@@ -1,6 +1,6 @@
 # Projects
 
-Final Project Proposal  
+**Final Project Proposal**  
 System Title: YouTuDe: Your Tourist Guide  
 Project Proponents:  
         Jonathan – Hustler  
@@ -10,7 +10,7 @@ Project Proponents:
 Description: (Scope) Functionalities  
 Scope  
 
-Client-Side  
+**Client-Side**  
 1. Create Account  
 2. Login  
 3. View Details  
