@@ -19,6 +19,8 @@ namespace YouTuDe.Client
 
         private string profile;
 
+        //new edited part
+
 
         //for string count
         int count;
