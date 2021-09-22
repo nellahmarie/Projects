@@ -1,13 +1,14 @@
+string sample = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;
 # Projects
 
 **Final Project Proposal**  
 System Title: YouTuDe: Your Tourist Guide  
 Project Proponents:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jonathan – Hustler  
+sample+Jonathan – Hustler  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jhonnysar – Hacker  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nellah – Hipster  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angel – Tester
-  
+
 Description: (Scope) Functionalities  
 Scope  
 
