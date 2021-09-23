@@ -22,3 +22,6 @@ C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.csproj.Ge
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.csproj.CoreCompileInputs.cache
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.exe
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.pdb
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Client.Status.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Client.Requests.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Client.Spots.resources
