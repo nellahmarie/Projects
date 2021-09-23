@@ -52,6 +52,24 @@
     <Compile Include="Account\Account.Designer.cs">
       <DependentUpon>Account.cs</DependentUpon>
     </Compile>
+    <Compile Include="Client\Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\Status.Designer.cs">
+      <DependentUpon>Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\Requests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\Requests.Designer.cs">
+      <DependentUpon>Requests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\Spots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\Spots.Designer.cs">
+      <DependentUpon>Spots.cs</DependentUpon>
+    </Compile>
     <Compile Include="Client\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +88,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Account\Account.resx">
       <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Status.resx">
+      <DependentUpon>Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Requests.resx">
+      <DependentUpon>Requests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Spots.resx">
+      <DependentUpon>Spots.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
