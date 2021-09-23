@@ -38,6 +38,7 @@ namespace YouTuDe.Client
             Allignment();
 
             lblfullname.Text = Login.firstname + " " + Login.lastname;
+            
         }
 
         public void Allignment()
