@@ -147,27 +147,43 @@ namespace YouTuDe.Client
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            Client.Dashboard dashboard = new Client.Dashboard();
+            this.Visible = false;
+            dashboard.Show();
         }
 
         private void btnSpots_Click(object sender, EventArgs e)
         {
-
+            Client.Spots spots = new Client.Spots();
+            this.Visible = false;
+            spots.Show();
         }
 
         private void btnRequests_Click(object sender, EventArgs e)
         {
-
+            Client.Requests requests = new Client.Requests();
+            this.Visible = false;
+            requests.Show();
         }
 
         private void btnStatus_Click(object sender, EventArgs e)
         {
-
+            Client.Status status = new Client.Status();
+            this.Visible = false;
+            status.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-
+            string text = "Do you wish to log out?";
+            string caption = "Logout";
+            DialogResult result = MessageBox.Show(text, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Login login = new Login();
+                this.Visible = false;
+                login.Show();
+            }
         }
 
         private void btnDashboard_MouseHover(object sender, EventArgs e)

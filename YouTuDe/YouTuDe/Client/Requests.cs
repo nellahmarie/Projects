@@ -144,5 +144,80 @@ namespace YouTuDe.Client
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSpots_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRequests_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDashboard_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDashboard_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSpots_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSpots_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRequests_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRequests_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStatus_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStatus_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogout_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogout_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
     }
 }

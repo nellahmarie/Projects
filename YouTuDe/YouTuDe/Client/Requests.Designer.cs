@@ -83,6 +83,9 @@ namespace YouTuDe.Client
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "LOGOUT";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            this.btnLogout.MouseLeave += new System.EventHandler(this.btnLogout_MouseLeave);
+            this.btnLogout.MouseHover += new System.EventHandler(this.btnLogout_MouseHover);
             // 
             // btnStatus
             // 
@@ -95,6 +98,9 @@ namespace YouTuDe.Client
             this.btnStatus.TabIndex = 4;
             this.btnStatus.Text = "STATUS";
             this.btnStatus.UseVisualStyleBackColor = true;
+            this.btnStatus.Click += new System.EventHandler(this.btnStatus_Click);
+            this.btnStatus.MouseLeave += new System.EventHandler(this.btnStatus_MouseLeave);
+            this.btnStatus.MouseHover += new System.EventHandler(this.btnStatus_MouseHover);
             // 
             // btnRequests
             // 
@@ -107,6 +113,9 @@ namespace YouTuDe.Client
             this.btnRequests.TabIndex = 3;
             this.btnRequests.Text = "REQUESTS";
             this.btnRequests.UseVisualStyleBackColor = true;
+            this.btnRequests.Click += new System.EventHandler(this.btnRequests_Click);
+            this.btnRequests.MouseLeave += new System.EventHandler(this.btnRequests_MouseLeave);
+            this.btnRequests.MouseHover += new System.EventHandler(this.btnRequests_MouseHover);
             // 
             // btnSpots
             // 
@@ -119,6 +128,9 @@ namespace YouTuDe.Client
             this.btnSpots.TabIndex = 2;
             this.btnSpots.Text = "SPOTS";
             this.btnSpots.UseVisualStyleBackColor = true;
+            this.btnSpots.Click += new System.EventHandler(this.btnSpots_Click);
+            this.btnSpots.MouseLeave += new System.EventHandler(this.btnSpots_MouseLeave);
+            this.btnSpots.MouseHover += new System.EventHandler(this.btnSpots_MouseHover);
             // 
             // btnDashboard
             // 
@@ -131,6 +143,9 @@ namespace YouTuDe.Client
             this.btnDashboard.TabIndex = 1;
             this.btnDashboard.Text = "DASHBOARD";
             this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            this.btnDashboard.MouseLeave += new System.EventHandler(this.btnDashboard_MouseLeave);
+            this.btnDashboard.MouseHover += new System.EventHandler(this.btnDashboard_MouseHover);
             // 
             // pbprofile
             // 
