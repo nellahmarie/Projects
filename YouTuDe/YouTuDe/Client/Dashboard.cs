@@ -38,14 +38,6 @@ namespace YouTuDe.Client
             Allignment();
 
             lblfullname.Text = Login.firstname + " " + Login.lastname;
-
-            //Sample Commit, Push
-            //again, fetch is for checking
-            //So it's just Optional
-            //let's start again to Commit and push
-            //Commit is to save changes of your code
-            //While Push is to update your code stored in Github Cloud
-            //so... G
         }
 
         public void Allignment()
