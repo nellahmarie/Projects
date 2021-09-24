@@ -31,7 +31,14 @@ namespace YouTuDe.Forgot
             }
             else
             {
-                btnproceed.Enabled = true;
+                if (!(Int32.TryParse(txtcode.Text, out int sample)))
+                {
+                    btnproceed.Enabled = false;
+                }
+                else
+                {
+                    btnproceed.Enabled = true;
+                }
             }
         }
 
@@ -40,13 +47,19 @@ namespace YouTuDe.Forgot
             try
             {
                 Connection.Connection.DB();
-                Function.Function.gen = "SELECT * FROM users WHERE userid = '"+Id.userid+"' ";
+                Function.Function.gen = "SELECT * FROM users WHERE userid = '"+Id.userid+"' AND verCode = '"+txtcode.Text+"' ";
                 Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
                 Function.Function.reader = Function.Function.command.ExecuteReader();
 
                 if (Function.Function.reader.HasRows)
                 {
                     Function.Function.reader.Read();
+
+                    //MessageBox.Show("sample");
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Security code, Please try Agian!", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
             catch (Exception ex)
