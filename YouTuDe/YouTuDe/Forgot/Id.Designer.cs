@@ -83,9 +83,9 @@ namespace YouTuDe.Forgot
             // btnreset
             // 
             this.btnreset.Enabled = false;
-            this.btnreset.Location = new System.Drawing.Point(158, 103);
+            this.btnreset.Location = new System.Drawing.Point(157, 103);
             this.btnreset.Name = "btnreset";
-            this.btnreset.Size = new System.Drawing.Size(93, 23);
+            this.btnreset.Size = new System.Drawing.Size(94, 23);
             this.btnreset.TabIndex = 13;
             this.btnreset.Text = "Reset Password";
             this.btnreset.UseVisualStyleBackColor = true;
