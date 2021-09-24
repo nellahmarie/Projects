@@ -48,7 +48,9 @@ namespace YouTuDe
 
         private void linkLabelForgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+            Forgot.Id id = new Forgot.Id();
+            this.Visible = false;
+            id.Show();
         }
 
         private void btnlogin_Click(object sender, EventArgs e)

@@ -25,3 +25,4 @@ C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.pdb
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Client.Status.resources
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Client.Requests.resources
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Client.Spots.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Forgot.Id.resources
