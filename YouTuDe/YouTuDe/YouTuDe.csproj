@@ -77,6 +77,12 @@
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Connection\Connection.cs" />
+    <Compile Include="Forgot\Id.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgot\Id.Designer.cs">
+      <DependentUpon>Id.cs</DependentUpon>
+    </Compile>
     <Compile Include="Function\Function.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Client\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgot\Id.resx">
+      <DependentUpon>Id.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
