@@ -66,8 +66,6 @@ namespace YouTuDe.Forgot
 
             userid = txtId.Text;
 
-            //MessageBox.Show(convertedRandom);
-
             try
             {
                 Connection.Connection.DB();
