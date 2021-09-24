@@ -55,7 +55,9 @@ namespace YouTuDe.Forgot
                 {
                     Function.Function.reader.Read();
 
-                    //MessageBox.Show("sample");
+                    Forgot.Password password = new Forgot.Password();
+                    this.Visible = false;
+                    password.Show();
                 }
                 else
                 {

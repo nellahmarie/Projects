@@ -89,6 +89,12 @@
     <Compile Include="Forgot\Id.Designer.cs">
       <DependentUpon>Id.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forgot\Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgot\Password.Designer.cs">
+      <DependentUpon>Password.cs</DependentUpon>
+    </Compile>
     <Compile Include="Function\Function.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forgot\Id.resx">
       <DependentUpon>Id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgot\Password.resx">
+      <DependentUpon>Password.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
