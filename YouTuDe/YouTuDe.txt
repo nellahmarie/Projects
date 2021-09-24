@@ -12,5 +12,6 @@ CREATE TABLE users(
 		userNumber varchar(20) NOT NULL,
 		username varchar(20) NOT NULL,
 		password varchar(20) NOT NULL,
-		rolename varchar(20) NOT NULL
+		rolename varchar(20) NOT NULL,
+		verCode varchar(6)
 );
