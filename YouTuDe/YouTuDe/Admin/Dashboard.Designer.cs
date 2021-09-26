@@ -41,8 +41,12 @@ namespace YouTuDe.Admin
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -194,12 +198,41 @@ namespace YouTuDe.Admin
             this.label2.TabIndex = 15;
             this.label2.Text = "Manager";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(297, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "DASHBOARD";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Location = new System.Drawing.Point(178, 127);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(363, 324);
+            this.panel2.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(5, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(353, 313);
+            this.panel3.TabIndex = 0;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
             this.ClientSize = new System.Drawing.Size(553, 456);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard";
@@ -209,7 +242,9 @@ namespace YouTuDe.Admin
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -227,5 +262,8 @@ namespace YouTuDe.Admin
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }
