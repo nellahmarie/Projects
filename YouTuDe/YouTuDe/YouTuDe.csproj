@@ -96,6 +96,12 @@
       <DependentUpon>Password.cs</DependentUpon>
     </Compile>
     <Compile Include="Function\Function.cs" />
+    <Compile Include="IfNoUsers\AdminNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IfNoUsers\AdminNumber.Designer.cs">
+      <DependentUpon>AdminNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     <EmbeddedResource Include="Forgot\Password.resx">
       <DependentUpon>Password.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IfNoUsers\AdminNumber.resx">
+      <DependentUpon>AdminNumber.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +161,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

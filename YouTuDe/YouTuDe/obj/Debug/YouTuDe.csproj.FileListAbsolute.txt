@@ -28,3 +28,4 @@ C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Client.Sp
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Forgot.Id.resources
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Forgot.Code.resources
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Forgot.Password.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.IfNoUsers.AdminNumber.resources
