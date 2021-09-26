@@ -52,6 +52,24 @@
     <Compile Include="Account\Account.Designer.cs">
       <DependentUpon>Account.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Drivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Drivers.Designer.cs">
+      <DependentUpon>Drivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Tourist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Tourist.Designer.cs">
+      <DependentUpon>Tourist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Spots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Spots.Designer.cs">
+      <DependentUpon>Spots.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +136,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Account\Account.resx">
       <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Drivers.resx">
+      <DependentUpon>Drivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Tourist.resx">
+      <DependentUpon>Tourist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Spots.resx">
+      <DependentUpon>Spots.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
