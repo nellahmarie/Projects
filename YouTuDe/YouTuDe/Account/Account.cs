@@ -77,6 +77,10 @@ namespace YouTuDe.Account
                 {
                     MessageBox.Show("Phone Number must not be set as Null or Whitespace", "Null | Whitespace", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                else if(!(Int64.TryParse(txtphonenumber.Text, out long convertedNumber)))
+                {
+                    MessageBox.Show("Phone number must not be set as String", "String Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 else
                 {
                     try

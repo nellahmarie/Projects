@@ -105,7 +105,9 @@ namespace YouTuDe
                         }
                         else
                         {
-                            MessageBox.Show("Manager");
+                            Admin.Dashboard dashboard = new Admin.Dashboard();
+                            this.Visible = false;
+                            dashboard.Show();
                         }
                     }
                     else
