@@ -38,7 +38,6 @@ namespace YouTuDe.Forgot
             }
             else
             {
-                btnreset.Enabled = true;
                 
                 if (!(Int32.TryParse(txtId.Text, out convertedId)))
                 {

@@ -32,7 +32,7 @@ namespace YouTuDe.IfNoUsers
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtadminnumber = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@ namespace YouTuDe.IfNoUsers
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtadminnumber);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(5, 5);
             this.panel2.Name = "panel2";
@@ -74,12 +74,13 @@ namespace YouTuDe.IfNoUsers
             this.label2.TabIndex = 2;
             this.label2.Text = "+";
             // 
-            // textBox1
+            // txtadminnumber
             // 
-            this.textBox1.Location = new System.Drawing.Point(104, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtadminnumber.Location = new System.Drawing.Point(104, 66);
+            this.txtadminnumber.Name = "txtadminnumber";
+            this.txtadminnumber.Size = new System.Drawing.Size(100, 20);
+            this.txtadminnumber.TabIndex = 1;
+            this.txtadminnumber.TextChanged += new System.EventHandler(this.txtadminnumber_TextChanged);
             // 
             // label1
             // 
@@ -113,12 +114,14 @@ namespace YouTuDe.IfNoUsers
             // 
             // btnsave
             // 
+            this.btnsave.Enabled = false;
             this.btnsave.Location = new System.Drawing.Point(247, 111);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(49, 23);
             this.btnsave.TabIndex = 5;
             this.btnsave.Text = "SAVE";
             this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // AdminNumber
             // 
@@ -144,7 +147,7 @@ namespace YouTuDe.IfNoUsers
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtadminnumber;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Label label4;
