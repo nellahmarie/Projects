@@ -52,6 +52,24 @@
     <Compile Include="Account\Account.Designer.cs">
       <DependentUpon>Account.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Status.Designer.cs">
+      <DependentUpon>Status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Pending.Designer.cs">
+      <DependentUpon>Pending.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Drivers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +154,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Account\Account.resx">
       <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Status.resx">
+      <DependentUpon>Status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Pending.resx">
+      <DependentUpon>Pending.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Drivers.resx">
       <DependentUpon>Drivers.cs</DependentUpon>
