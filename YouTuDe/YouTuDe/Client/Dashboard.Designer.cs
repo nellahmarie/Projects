@@ -30,7 +30,6 @@ namespace YouTuDe.Client
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblfullname = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnStatus = new System.Windows.Forms.Button();
             this.btnRequests = new System.Windows.Forms.Button();
@@ -40,6 +39,7 @@ namespace YouTuDe.Client
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblfullname = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).BeginInit();
             this.panel2.SuspendLayout();
@@ -60,17 +60,6 @@ namespace YouTuDe.Client
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(167, 343);
             this.panel1.TabIndex = 0;
-            // 
-            // lblfullname
-            // 
-            this.lblfullname.AutoSize = true;
-            this.lblfullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfullname.ForeColor = System.Drawing.Color.Red;
-            this.lblfullname.Location = new System.Drawing.Point(67, 114);
-            this.lblfullname.Name = "lblfullname";
-            this.lblfullname.Size = new System.Drawing.Size(28, 16);
-            this.lblfullname.TabIndex = 5;
-            this.lblfullname.Text = "FN";
             // 
             // btnLogout
             // 
@@ -184,6 +173,17 @@ namespace YouTuDe.Client
             this.label1.Size = new System.Drawing.Size(153, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "DASHBOARD";
+            // 
+            // lblfullname
+            // 
+            this.lblfullname.AutoSize = true;
+            this.lblfullname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfullname.ForeColor = System.Drawing.Color.Red;
+            this.lblfullname.Location = new System.Drawing.Point(67, 114);
+            this.lblfullname.Name = "lblfullname";
+            this.lblfullname.Size = new System.Drawing.Size(28, 16);
+            this.lblfullname.TabIndex = 5;
+            this.lblfullname.Text = "FN";
             // 
             // Dashboard
             // 
