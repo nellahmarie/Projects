@@ -31,7 +31,7 @@ namespace YouTuDe.IfNoUsers
             }
             else
             {
-                if (!(Int32.TryParse(txtadminnumber.Text, out int convertedNumber)))
+                if (!(Int64.TryParse(txtadminnumber.Text, out long convertedNumber)))
                 {
                     btnsave.Enabled = false;
                 }
@@ -47,11 +47,15 @@ namespace YouTuDe.IfNoUsers
             try
             {
                 Connection.Connection.DB();
-                Function.Function.gen = "INSERT INTO users() VALUES() ";
+                Function.Function.gen = "INSERT INTO users(userNumber, username, password, rolename) VALUES(('+' + '"+txtadminnumber.Text+"'), 'Admin', 'Admin', 'Manager' ) ";
                 Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
                 Function.Function.command.ExecuteNonQuery();
 
-
+                MessageBox.Show("Manager Info Successfully Saved!", "Registration", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                Login login = new Login();
+                this.Visible = false;
+                login.Show();
 
                 Connection.Connection.conn.Close();
             }
