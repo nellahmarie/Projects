@@ -149,5 +149,67 @@ namespace YouTuDe.Admin
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            Admin.Dashboard dashboard = new Admin.Dashboard();
+            this.Visible = false;
+            dashboard.Show();
+        }
+
+        private void btnSpots_Click(object sender, EventArgs e)
+        {
+            Admin.Spots spots = new Admin.Spots();
+            this.Visible = false;
+            spots.Show();
+        }
+
+        private void btnTourist_Click(object sender, EventArgs e)
+        {
+            Admin.Tourist tourist = new Admin.Tourist();
+            this.Visible = false;
+            tourist.Show();
+        }
+
+        private void btnDrivers_Click(object sender, EventArgs e)
+        {
+            Admin.Drivers drivers = new Admin.Drivers();
+            this.Visible = false;
+            drivers.Show();
+        }
+
+        private void btnPending_Click(object sender, EventArgs e)
+        {
+            Admin.Pending pending = new Admin.Pending();
+            this.Visible = false;
+            pending.Show();
+        }
+
+        private void btnStatus_Click(object sender, EventArgs e)
+        {
+            Admin.Status status = new Admin.Status();
+            this.Visible = false;
+            status.Show();
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            Admin.Reports reports = new Admin.Reports();
+            this.Visible = false;
+            reports.Show();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            string text = "Do you wish to log out?";
+            string caption = "Logout";
+            DialogResult result = MessageBox.Show(text, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Login login = new Login();
+                this.Visible = false;
+                login.Show();
+            }
+        }
     }
 }

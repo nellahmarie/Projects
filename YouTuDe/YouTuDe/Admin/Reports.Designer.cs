@@ -31,14 +31,14 @@ namespace YouTuDe.Admin
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnReports = new System.Windows.Forms.Button();
+            this.btnStatus = new System.Windows.Forms.Button();
+            this.btnPending = new System.Windows.Forms.Button();
+            this.btnDrivers = new System.Windows.Forms.Button();
+            this.btnTourist = new System.Windows.Forms.Button();
+            this.btnSpots = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.lblfullname = new System.Windows.Forms.Label();
             this.pbprofile = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,14 +54,14 @@ namespace YouTuDe.Admin
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(33)))), ((int)(((byte)(32)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnLogout);
+            this.panel1.Controls.Add(this.btnReports);
+            this.panel1.Controls.Add(this.btnStatus);
+            this.panel1.Controls.Add(this.btnPending);
+            this.panel1.Controls.Add(this.btnDrivers);
+            this.panel1.Controls.Add(this.btnTourist);
+            this.panel1.Controls.Add(this.btnSpots);
+            this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.lblfullname);
             this.panel1.Controls.Add(this.pbprofile);
             this.panel1.Location = new System.Drawing.Point(5, 5);
@@ -80,101 +80,109 @@ namespace YouTuDe.Admin
             this.label2.TabIndex = 15;
             this.label2.Text = "Manager";
             // 
-            // button8
+            // btnLogout
             // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.button8.Location = new System.Drawing.Point(-1, 377);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(167, 34);
-            this.button8.TabIndex = 14;
-            this.button8.Text = "LOGOUT";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.btnLogout.Location = new System.Drawing.Point(-1, 377);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(167, 34);
+            this.btnLogout.TabIndex = 14;
+            this.btnLogout.Text = "LOGOUT";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // button7
+            // btnReports
             // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.button7.Location = new System.Drawing.Point(-1, 345);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(167, 34);
-            this.button7.TabIndex = 13;
-            this.button7.Text = "REPORTS";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnReports.FlatAppearance.BorderSize = 0;
+            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReports.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.btnReports.Location = new System.Drawing.Point(-1, 345);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(167, 34);
+            this.btnReports.TabIndex = 13;
+            this.btnReports.Text = "REPORTS";
+            this.btnReports.UseVisualStyleBackColor = true;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
-            // button6
+            // btnStatus
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.button6.Location = new System.Drawing.Point(-1, 313);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(167, 34);
-            this.button6.TabIndex = 12;
-            this.button6.Text = "STATUS";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnStatus.FlatAppearance.BorderSize = 0;
+            this.btnStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.btnStatus.Location = new System.Drawing.Point(-1, 313);
+            this.btnStatus.Name = "btnStatus";
+            this.btnStatus.Size = new System.Drawing.Size(167, 34);
+            this.btnStatus.TabIndex = 12;
+            this.btnStatus.Text = "STATUS";
+            this.btnStatus.UseVisualStyleBackColor = true;
+            this.btnStatus.Click += new System.EventHandler(this.btnStatus_Click);
             // 
-            // button5
+            // btnPending
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.button5.Location = new System.Drawing.Point(-1, 281);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(167, 34);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "PENDING";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnPending.FlatAppearance.BorderSize = 0;
+            this.btnPending.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPending.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.btnPending.Location = new System.Drawing.Point(-1, 281);
+            this.btnPending.Name = "btnPending";
+            this.btnPending.Size = new System.Drawing.Size(167, 34);
+            this.btnPending.TabIndex = 11;
+            this.btnPending.Text = "PENDING";
+            this.btnPending.UseVisualStyleBackColor = true;
+            this.btnPending.Click += new System.EventHandler(this.btnPending_Click);
             // 
-            // button4
+            // btnDrivers
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.button4.Location = new System.Drawing.Point(-1, 249);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(167, 34);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "DRIVERS";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDrivers.FlatAppearance.BorderSize = 0;
+            this.btnDrivers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDrivers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.btnDrivers.Location = new System.Drawing.Point(-1, 249);
+            this.btnDrivers.Name = "btnDrivers";
+            this.btnDrivers.Size = new System.Drawing.Size(167, 34);
+            this.btnDrivers.TabIndex = 10;
+            this.btnDrivers.Text = "DRIVERS";
+            this.btnDrivers.UseVisualStyleBackColor = true;
+            this.btnDrivers.Click += new System.EventHandler(this.btnDrivers_Click);
             // 
-            // button3
+            // btnTourist
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.button3.Location = new System.Drawing.Point(-1, 217);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 34);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "TOURIST";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnTourist.FlatAppearance.BorderSize = 0;
+            this.btnTourist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTourist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.btnTourist.Location = new System.Drawing.Point(-1, 217);
+            this.btnTourist.Name = "btnTourist";
+            this.btnTourist.Size = new System.Drawing.Size(167, 34);
+            this.btnTourist.TabIndex = 9;
+            this.btnTourist.Text = "TOURIST";
+            this.btnTourist.UseVisualStyleBackColor = true;
+            this.btnTourist.Click += new System.EventHandler(this.btnTourist_Click);
             // 
-            // button2
+            // btnSpots
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.button2.Location = new System.Drawing.Point(-1, 185);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 34);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "SPOTS";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSpots.FlatAppearance.BorderSize = 0;
+            this.btnSpots.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSpots.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.btnSpots.Location = new System.Drawing.Point(-1, 185);
+            this.btnSpots.Name = "btnSpots";
+            this.btnSpots.Size = new System.Drawing.Size(167, 34);
+            this.btnSpots.TabIndex = 8;
+            this.btnSpots.Text = "SPOTS";
+            this.btnSpots.UseVisualStyleBackColor = true;
+            this.btnSpots.Click += new System.EventHandler(this.btnSpots_Click);
             // 
-            // button1
+            // btnDashboard
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
-            this.button1.Location = new System.Drawing.Point(-1, 153);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 34);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "DASHBOARD";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(89)))));
+            this.btnDashboard.Location = new System.Drawing.Point(-1, 153);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(167, 34);
+            this.btnDashboard.TabIndex = 7;
+            this.btnDashboard.Text = "DASHBOARD";
+            this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // lblfullname
             // 
@@ -253,14 +261,14 @@ namespace YouTuDe.Admin
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pbprofile;
         private System.Windows.Forms.Label lblfullname;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnDashboard;
+        private System.Windows.Forms.Button btnDrivers;
+        private System.Windows.Forms.Button btnTourist;
+        private System.Windows.Forms.Button btnSpots;
+        private System.Windows.Forms.Button btnStatus;
+        private System.Windows.Forms.Button btnPending;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;

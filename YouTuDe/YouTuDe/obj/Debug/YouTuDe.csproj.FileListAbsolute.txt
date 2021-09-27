@@ -31,3 +31,8 @@ C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Forgot.Pa
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.IfNoUsers.AdminNumber.resources
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Admin.Dashboard.resources
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Admin.Spots.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Admin.Reports.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Admin.Status.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Admin.Pending.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Admin.Drivers.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Admin.Tourist.resources
