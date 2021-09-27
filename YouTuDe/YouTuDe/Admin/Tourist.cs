@@ -18,12 +18,12 @@ namespace YouTuDe.Admin
         private string profile;
 
         private int touristCount;
-        private string touristUserId;
-        private string[] touristFirstname = new string[20];
-        private string[] touristLastname = new string[20];
-        private string touristAge;
-        private string touristProfile;
-        private string touristNumber;
+        private string[] touristUserId = new string[100];
+        private string[] touristFirstname = new string[100];
+        private string[] touristLastname = new string[100];
+        private string[] touristAge = new string[100];
+        private string[] touristProfile = new string[100];
+        private string[] touristNumber = new string[100];
 
         //for string count
         int count;
@@ -367,14 +367,20 @@ namespace YouTuDe.Admin
                                 Function.Function.reader.Read();
 
 
-                                touristUserId = Function.Function.reader.GetValue(0).ToString();
+                                touristUserId[i] = Function.Function.reader.GetValue(0).ToString();
                                 touristFirstname[i] = Function.Function.reader.GetValue(1).ToString();
                                 touristLastname[i] = Function.Function.reader.GetValue(2).ToString();
+                                touristAge[i] = Function.Function.reader.GetValue(3).ToString();
+                                touristProfile[i] = Function.Function.reader.GetValue(7).ToString();
+                                touristNumber[i] = Function.Function.reader.GetValue(8).ToString();
 
                                 touristUserControl[i] = new TouristUserControl();
 
                                 //Adding Data
                                 touristUserControl[i].Fullname = touristFirstname[i] + " " + touristLastname[i];
+                                touristUserControl[i].age = touristAge[i];
+                                touristUserControl[i].number = touristNumber[i];
+                                touristUserControl[i].Profile = touristProfile[i];
 
                                 flowLayoutPanelTourist.Controls.Add(touristUserControl[i]);
                             }
