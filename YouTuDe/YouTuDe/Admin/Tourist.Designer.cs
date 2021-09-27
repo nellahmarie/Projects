@@ -44,9 +44,11 @@ namespace YouTuDe.Admin
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanelTourist = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -244,10 +246,19 @@ namespace YouTuDe.Admin
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.flowLayoutPanelTourist);
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(353, 313);
             this.panel3.TabIndex = 0;
+            // 
+            // flowLayoutPanelTourist
+            // 
+            this.flowLayoutPanelTourist.AutoScroll = true;
+            this.flowLayoutPanelTourist.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanelTourist.Name = "flowLayoutPanelTourist";
+            this.flowLayoutPanelTourist.Size = new System.Drawing.Size(347, 307);
+            this.flowLayoutPanelTourist.TabIndex = 0;
             // 
             // Tourist
             // 
@@ -267,6 +278,7 @@ namespace YouTuDe.Admin
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,5 +301,6 @@ namespace YouTuDe.Admin
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelTourist;
     }
 }

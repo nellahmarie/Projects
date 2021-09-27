@@ -17,6 +17,14 @@ namespace YouTuDe.Admin
         private int id;
         private string profile;
 
+        private int touristCount;
+        private string touristUserId;
+        private string[] touristFirstname = new string[20];
+        private string[] touristLastname = new string[20];
+        private string touristAge;
+        private string touristProfile;
+        private string touristNumber;
+
         //for string count
         int count;
         string name;
@@ -35,6 +43,8 @@ namespace YouTuDe.Admin
             Allignment();
 
             lblfullname.Text = Login.firstname + " " + Login.lastname;
+
+            GenerateTourist();
         }
 
         public void Allignment()
@@ -306,6 +316,80 @@ namespace YouTuDe.Admin
         {
             btnLogout.BackColor = Color.FromArgb(28, 33, 32);
             btnLogout.ForeColor = Color.FromArgb(255, 222, 89);
+        }
+
+        public void GenerateTourist()
+        {
+            flowLayoutPanelTourist.Controls.Clear();
+
+           
+            /*
+            //Sample Names
+            string[] name = new string[5] {"Nathan", "Nat", "Jonathan", "Light", "Death"};
+
+            for (int i = 0; i<touristUserControl.Length; i++)
+            {
+                touristUserControl[i] = new TouristUserControl();
+
+                //adding sample data
+                touristUserControl[i].Fullname = name[i];
+
+                flowLayoutPanelTourist.Controls.Add(touristUserControl[i]);
+            }*/
+            try
+            {
+                Connection.Connection.DB();
+                Function.Function.gen = "SELECT COUNT(*) FROM users WHERE rolename = 'Tourist' ";
+                Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
+                Function.Function.reader = Function.Function.command.ExecuteReader();
+
+                if (Function.Function.reader.HasRows)
+                {
+                    Function.Function.reader.Read();
+
+                    string count = Function.Function.reader.GetValue(0).ToString();
+                    touristCount = Convert.ToInt32(count);
+
+                    TouristUserControl[] touristUserControl = new TouristUserControl[touristCount];
+
+                    try
+                    {
+                        Connection.Connection.DB();
+                        Function.Function.gen = "SELECT * FROM users WHERE rolename = 'Tourist' ";
+                        Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
+                        Function.Function.reader = Function.Function.command.ExecuteReader();
+
+                        if (Function.Function.reader.HasRows)
+                        {
+
+                            for (int i = 0; i<touristUserControl.Length; i++)
+                            {
+                                Function.Function.reader.Read();
+
+
+                                touristUserId = Function.Function.reader.GetValue(0).ToString();
+                                touristFirstname[i] = Function.Function.reader.GetValue(1).ToString();
+                                touristLastname[i] = Function.Function.reader.GetValue(2).ToString();
+
+                                touristUserControl[i] = new TouristUserControl();
+
+                                //Adding Data
+                                touristUserControl[i].Fullname = touristFirstname[i] + " " + touristLastname[i];
+
+                                flowLayoutPanelTourist.Controls.Add(touristUserControl[i]);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
