@@ -211,5 +211,101 @@ namespace YouTuDe.Admin
                 login.Show();
             }
         }
+
+        private void btnDashboard_MouseHover(object sender, EventArgs e)
+        {
+            btnDashboard.BackColor = Color.FromArgb(255, 222, 89);
+            btnDashboard.ForeColor = Color.Red;
+        }
+
+        private void btnDashboard_MouseLeave(object sender, EventArgs e)
+        {
+            btnDashboard.BackColor = Color.FromArgb(28, 33, 32);
+            btnDashboard.ForeColor = Color.FromArgb(255, 222, 89);
+        }
+
+        private void btnSpots_MouseHover(object sender, EventArgs e)
+        {
+            btnSpots.BackColor = Color.FromArgb(255, 222, 89);
+            btnSpots.ForeColor = Color.Red;
+        }
+
+        private void btnSpots_MouseLeave(object sender, EventArgs e)
+        {
+            btnSpots.BackColor = Color.FromArgb(28, 33, 32);
+            btnSpots.ForeColor = Color.FromArgb(255, 222, 89);
+        }
+
+        private void btnTourist_MouseHover(object sender, EventArgs e)
+        {
+            btnTourist.BackColor = Color.FromArgb(255, 222, 89);
+            btnTourist.ForeColor = Color.Red;
+        }
+
+        private void btnTourist_MouseLeave(object sender, EventArgs e)
+        {
+            btnTourist.BackColor = Color.FromArgb(28, 33, 32);
+            btnTourist.ForeColor = Color.FromArgb(255, 222, 89);
+        }
+
+        private void btnDrivers_MouseHover(object sender, EventArgs e)
+        {
+            btnDrivers.BackColor = Color.FromArgb(255, 222, 89);
+            btnDrivers.ForeColor = Color.Red;
+        }
+
+        private void btnDrivers_MouseLeave(object sender, EventArgs e)
+        {
+            btnDrivers.BackColor = Color.FromArgb(28, 33, 32);
+            btnDrivers.ForeColor = Color.FromArgb(255, 222, 89);
+        }
+
+        private void btnPending_MouseHover(object sender, EventArgs e)
+        {
+            btnPending.BackColor = Color.FromArgb(255, 222, 89);
+            btnPending.ForeColor = Color.Red;
+        }
+
+        private void btnPending_MouseLeave(object sender, EventArgs e)
+        {
+            btnPending.BackColor = Color.FromArgb(28, 33, 32);
+            btnPending.ForeColor = Color.FromArgb(255, 222, 89);
+        }
+
+        private void btnStatus_MouseHover(object sender, EventArgs e)
+        {
+            btnStatus.BackColor = Color.FromArgb(255, 222, 89);
+            btnStatus.ForeColor = Color.Red;
+        }
+
+        private void btnStatus_MouseLeave(object sender, EventArgs e)
+        {
+            btnStatus.BackColor = Color.FromArgb(28, 33, 32);
+            btnStatus.ForeColor = Color.FromArgb(255, 222, 89);
+        }
+
+        private void btnReports_MouseHover(object sender, EventArgs e)
+        {
+            btnReports.BackColor = Color.FromArgb(255, 222, 89);
+            btnReports.ForeColor = Color.Red;
+        }
+
+        private void btnReports_MouseLeave(object sender, EventArgs e)
+        {
+            btnReports.BackColor = Color.FromArgb(28, 33, 32);
+            btnReports.ForeColor = Color.FromArgb(255, 222, 89);
+        }
+
+        private void btnLogout_MouseHover(object sender, EventArgs e)
+        {
+            btnLogout.BackColor = Color.FromArgb(255, 222, 89);
+            btnLogout.ForeColor = Color.Red;
+        }
+
+        private void btnLogout_MouseLeave(object sender, EventArgs e)
+        {
+            btnLogout.BackColor = Color.FromArgb(28, 33, 32);
+            btnLogout.ForeColor = Color.FromArgb(255, 222, 89);
+        }
     }
 }

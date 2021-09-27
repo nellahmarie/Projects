@@ -92,6 +92,8 @@ namespace YouTuDe.Admin
             this.btnLogout.Text = "LOGOUT";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            this.btnLogout.MouseLeave += new System.EventHandler(this.btnLogout_MouseLeave);
+            this.btnLogout.MouseHover += new System.EventHandler(this.btnLogout_MouseHover);
             // 
             // btnReports
             // 
@@ -105,6 +107,8 @@ namespace YouTuDe.Admin
             this.btnReports.Text = "REPORTS";
             this.btnReports.UseVisualStyleBackColor = true;
             this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
+            this.btnReports.MouseLeave += new System.EventHandler(this.btnReports_MouseLeave);
+            this.btnReports.MouseHover += new System.EventHandler(this.btnReports_MouseHover);
             // 
             // btnStatus
             // 
@@ -118,6 +122,8 @@ namespace YouTuDe.Admin
             this.btnStatus.Text = "STATUS";
             this.btnStatus.UseVisualStyleBackColor = true;
             this.btnStatus.Click += new System.EventHandler(this.btnStatus_Click);
+            this.btnStatus.MouseLeave += new System.EventHandler(this.btnStatus_MouseLeave);
+            this.btnStatus.MouseHover += new System.EventHandler(this.btnStatus_MouseHover);
             // 
             // btnPending
             // 
@@ -131,6 +137,8 @@ namespace YouTuDe.Admin
             this.btnPending.Text = "PENDING";
             this.btnPending.UseVisualStyleBackColor = true;
             this.btnPending.Click += new System.EventHandler(this.btnPending_Click);
+            this.btnPending.MouseLeave += new System.EventHandler(this.btnPending_MouseLeave);
+            this.btnPending.MouseHover += new System.EventHandler(this.btnPending_MouseHover);
             // 
             // btnDrivers
             // 
@@ -144,6 +152,8 @@ namespace YouTuDe.Admin
             this.btnDrivers.Text = "DRIVERS";
             this.btnDrivers.UseVisualStyleBackColor = true;
             this.btnDrivers.Click += new System.EventHandler(this.btnDrivers_Click);
+            this.btnDrivers.MouseLeave += new System.EventHandler(this.btnDrivers_MouseLeave);
+            this.btnDrivers.MouseHover += new System.EventHandler(this.btnDrivers_MouseHover);
             // 
             // btnTourist
             // 
@@ -157,6 +167,8 @@ namespace YouTuDe.Admin
             this.btnTourist.Text = "TOURIST";
             this.btnTourist.UseVisualStyleBackColor = true;
             this.btnTourist.Click += new System.EventHandler(this.btnTourist_Click);
+            this.btnTourist.MouseLeave += new System.EventHandler(this.btnTourist_MouseLeave);
+            this.btnTourist.MouseHover += new System.EventHandler(this.btnTourist_MouseHover);
             // 
             // btnSpots
             // 
@@ -170,6 +182,8 @@ namespace YouTuDe.Admin
             this.btnSpots.Text = "SPOTS";
             this.btnSpots.UseVisualStyleBackColor = true;
             this.btnSpots.Click += new System.EventHandler(this.btnSpots_Click);
+            this.btnSpots.MouseLeave += new System.EventHandler(this.btnSpots_MouseLeave);
+            this.btnSpots.MouseHover += new System.EventHandler(this.btnSpots_MouseHover);
             // 
             // btnDashboard
             // 
@@ -183,6 +197,8 @@ namespace YouTuDe.Admin
             this.btnDashboard.Text = "DASHBOARD";
             this.btnDashboard.UseVisualStyleBackColor = true;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            this.btnDashboard.MouseLeave += new System.EventHandler(this.btnDashboard_MouseLeave);
+            this.btnDashboard.MouseHover += new System.EventHandler(this.btnDashboard_MouseHover);
             // 
             // lblfullname
             // 
