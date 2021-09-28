@@ -13,6 +13,7 @@ namespace YouTuDe
 {
     public partial class TouristUserControl : UserControl
     {
+        public string userid;
         public string Fullname;
         public string age;
         public string number;
@@ -25,6 +26,7 @@ namespace YouTuDe
 
         private void TouristUserControl_Load(object sender, EventArgs e)
         {
+            lbluserid.Text = userid;
             lblfullname.Text = Fullname;
             lblage.Text = age;
             lblphonenumber.Text = number;

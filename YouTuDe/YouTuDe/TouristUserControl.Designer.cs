@@ -31,13 +31,15 @@ namespace YouTuDe
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pbprofile = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblfullname = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblage = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbluserid = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.lblphonenumber = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblage = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblfullname = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pbprofile = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).BeginInit();
@@ -55,6 +57,8 @@ namespace YouTuDe
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.lbluserid);
+            this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.lblphonenumber);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblage);
@@ -67,25 +71,61 @@ namespace YouTuDe
             this.panel2.Size = new System.Drawing.Size(293, 93);
             this.panel2.TabIndex = 0;
             // 
-            // pbprofile
+            // lbluserid
             // 
-            this.pbprofile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbprofile.Location = new System.Drawing.Point(10, 10);
-            this.pbprofile.Name = "pbprofile";
-            this.pbprofile.Size = new System.Drawing.Size(82, 72);
-            this.pbprofile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbprofile.TabIndex = 0;
-            this.pbprofile.TabStop = false;
+            this.lbluserid.AutoSize = true;
+            this.lbluserid.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluserid.Location = new System.Drawing.Point(146, 71);
+            this.lbluserid.Name = "lbluserid";
+            this.lbluserid.Size = new System.Drawing.Size(10, 9);
+            this.lbluserid.TabIndex = 8;
+            this.lbluserid.Text = "0";
             // 
-            // label1
+            // label4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(98, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Name:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(98, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 9);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "User ID:";
+            // 
+            // lblphonenumber
+            // 
+            this.lblphonenumber.AutoSize = true;
+            this.lblphonenumber.Location = new System.Drawing.Point(155, 54);
+            this.lblphonenumber.Name = "lblphonenumber";
+            this.lblphonenumber.Size = new System.Drawing.Size(13, 13);
+            this.lblphonenumber.TabIndex = 6;
+            this.lblphonenumber.Text = "+";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(98, 54);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Phone #:";
+            // 
+            // lblage
+            // 
+            this.lblage.AutoSize = true;
+            this.lblage.Location = new System.Drawing.Point(133, 32);
+            this.lblage.Name = "lblage";
+            this.lblage.Size = new System.Drawing.Size(13, 13);
+            this.lblage.TabIndex = 4;
+            this.lblage.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(98, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Age:";
             // 
             // lblfullname
             // 
@@ -97,41 +137,25 @@ namespace YouTuDe
             this.lblfullname.TabIndex = 2;
             this.lblfullname.Text = "Fullname";
             // 
-            // label3
+            // label1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(98, 32);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Age:";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(98, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Name:";
             // 
-            // lblage
+            // pbprofile
             // 
-            this.lblage.AutoSize = true;
-            this.lblage.Location = new System.Drawing.Point(133, 32);
-            this.lblage.Name = "lblage";
-            this.lblage.Size = new System.Drawing.Size(13, 13);
-            this.lblage.TabIndex = 4;
-            this.lblage.Text = "0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(98, 54);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Phone #:";
-            // 
-            // lblphonenumber
-            // 
-            this.lblphonenumber.AutoSize = true;
-            this.lblphonenumber.Location = new System.Drawing.Point(155, 54);
-            this.lblphonenumber.Name = "lblphonenumber";
-            this.lblphonenumber.Size = new System.Drawing.Size(13, 13);
-            this.lblphonenumber.TabIndex = 6;
-            this.lblphonenumber.Text = "+";
+            this.pbprofile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbprofile.Location = new System.Drawing.Point(10, 10);
+            this.pbprofile.Name = "pbprofile";
+            this.pbprofile.Size = new System.Drawing.Size(82, 72);
+            this.pbprofile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbprofile.TabIndex = 0;
+            this.pbprofile.TabStop = false;
             // 
             // TouristUserControl
             // 
@@ -161,5 +185,7 @@ namespace YouTuDe
         private System.Windows.Forms.Label lblage;
         private System.Windows.Forms.Label lblphonenumber;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbluserid;
+        private System.Windows.Forms.Label label4;
     }
 }

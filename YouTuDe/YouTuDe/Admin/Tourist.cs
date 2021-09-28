@@ -377,6 +377,7 @@ namespace YouTuDe.Admin
                                 touristUserControl[i] = new TouristUserControl();
 
                                 //Adding Data
+                                touristUserControl[i].userid = touristUserId[i];
                                 touristUserControl[i].Fullname = touristFirstname[i] + " " + touristLastname[i];
                                 touristUserControl[i].age = touristAge[i];
                                 touristUserControl[i].number = touristNumber[i];
