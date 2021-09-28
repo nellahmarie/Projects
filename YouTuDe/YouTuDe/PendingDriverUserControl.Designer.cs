@@ -148,6 +148,7 @@ namespace YouTuDe
             this.btnaccept.TabIndex = 9;
             this.btnaccept.Text = "✔";
             this.btnaccept.UseVisualStyleBackColor = true;
+            this.btnaccept.Click += new System.EventHandler(this.btnaccept_Click);
             // 
             // btndeny
             // 

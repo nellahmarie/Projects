@@ -18,6 +18,7 @@ namespace YouTuDe.Admin
         private string profile;
 
         private int pendingDriverCount;
+        private string[] pendingDriverUserId = new string[100];
         private string[] pendingDriverFirstname = new string[100];
         private string[] pendingDriverLastname = new string[100];
         private string[] pendingDriverAge = new string[100];
@@ -350,6 +351,7 @@ namespace YouTuDe.Admin
                             {
                                 Function.Function.reader.Read();
 
+                                pendingDriverUserId[i] = Function.Function.reader.GetValue(0).ToString();
                                 pendingDriverFirstname[i] = Function.Function.reader.GetValue(1).ToString();
                                 pendingDriverLastname[i] = Function.Function.reader.GetValue(2).ToString();
                                 pendingDriverAge[i] = Function.Function.reader.GetValue(3).ToString();
@@ -360,6 +362,7 @@ namespace YouTuDe.Admin
                                 pendingDriverUserControl[i] = new PendingDriverUserControl();
 
                                 //Adding Data
+                                pendingDriverUserControl[i].userid = pendingDriverUserId[i];
                                 pendingDriverUserControl[i].Fullname = pendingDriverFirstname[i] + " " + pendingDriverLastname[i];
                                 pendingDriverUserControl[i].age = pendingDriverAge[i];
                                 pendingDriverUserControl[i].number = pendingDriverNumber[i];

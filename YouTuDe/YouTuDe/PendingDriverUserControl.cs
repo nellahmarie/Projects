@@ -13,6 +13,7 @@ namespace YouTuDe
 {
     public partial class PendingDriverUserControl : UserControl
     {
+        public string userid;
         public string Fullname;
         public string age;
         public string number;
@@ -42,6 +43,11 @@ namespace YouTuDe
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnaccept_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(userid);
         }
     }
 }
