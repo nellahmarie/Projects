@@ -38,6 +38,9 @@ namespace YouTuDe
             this.label2 = new System.Windows.Forms.Label();
             this.lblage = new System.Windows.Forms.Label();
             this.lblphonenumber = new System.Windows.Forms.Label();
+            this.btnaccept = new System.Windows.Forms.Button();
+            this.btndeny = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).BeginInit();
@@ -55,6 +58,9 @@ namespace YouTuDe
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.btndeny);
+            this.panel2.Controls.Add(this.btnaccept);
             this.panel2.Controls.Add(this.lblphonenumber);
             this.panel2.Controls.Add(this.lblage);
             this.panel2.Controls.Add(this.label2);
@@ -133,6 +139,36 @@ namespace YouTuDe
             this.lblphonenumber.TabIndex = 8;
             this.lblphonenumber.Text = "+";
             // 
+            // btnaccept
+            // 
+            this.btnaccept.ForeColor = System.Drawing.Color.Green;
+            this.btnaccept.Location = new System.Drawing.Point(246, 70);
+            this.btnaccept.Name = "btnaccept";
+            this.btnaccept.Size = new System.Drawing.Size(19, 20);
+            this.btnaccept.TabIndex = 9;
+            this.btnaccept.Text = "✔";
+            this.btnaccept.UseVisualStyleBackColor = true;
+            // 
+            // btndeny
+            // 
+            this.btndeny.ForeColor = System.Drawing.Color.Red;
+            this.btndeny.Location = new System.Drawing.Point(271, 70);
+            this.btndeny.Name = "btndeny";
+            this.btndeny.Size = new System.Drawing.Size(19, 20);
+            this.btndeny.TabIndex = 10;
+            this.btndeny.Text = "✖";
+            this.btndeny.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(196, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Accept:";
+            // 
             // PendingDriverUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,5 +197,8 @@ namespace YouTuDe
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblage;
         private System.Windows.Forms.Label lblphonenumber;
+        private System.Windows.Forms.Button btndeny;
+        private System.Windows.Forms.Button btnaccept;
+        private System.Windows.Forms.Label label4;
     }
 }
