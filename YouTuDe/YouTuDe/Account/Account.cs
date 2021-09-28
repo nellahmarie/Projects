@@ -81,7 +81,7 @@ namespace YouTuDe.Account
                 {
                     MessageBox.Show("Phone number must not be set as String", "String Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else if(!(Int32.TryParse(txtphonenumber.Text, out int convertedAge)))
+                else if(!(Int64.TryParse(txtphonenumber.Text, out long convertedAge)))
                 {
                     MessageBox.Show("Age must not be set as String", "String Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -124,7 +124,35 @@ namespace YouTuDe.Account
                         else if (rdbDriver.Checked == true)
                         {
                             rolename = "Driver";
-                            MessageBox.Show(rolename);
+                            try
+                            {
+                                Connection.Connection.DB();
+                                Function.Function.gen = "INSERT INTO pendingDriver(firstname, lastname, age, profile, userNumber, username, password, rolename) VALUES('"+txtfirstname.Text+ "', '"+txtlastname.Text+"', '"+txtage.Text+"', '"+profile+"', ('+' + '"+txtphonenumber.Text+"'), '"+txtusername.Text+"', '"+txtpassword.Text+"', '"+rolename+"') ";
+                                Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
+                                Function.Function.command.ExecuteNonQuery();
+
+                                try
+                                {
+                                    File.Copy(imageFile, Path.Combine(@"C:\Users\gubot\source\repos\YouTuDe\YouTuDe\bin\Debug\Profile", profile));
+                                }
+                                catch (Exception ex)
+                                {
+                                    //Do Nothing
+                                }
+
+                                Login login = new Login();
+                                this.Visible = false;
+                                login.Show();
+
+                                MessageBox.Show("Application Saved Successfully! \nPlease wait for Manager's Approval", "Account", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                                Connection.Connection.conn.Close();
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message);
+                            }
                         }
                         else
                         {
