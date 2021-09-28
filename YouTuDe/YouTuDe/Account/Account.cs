@@ -81,6 +81,10 @@ namespace YouTuDe.Account
                 {
                     MessageBox.Show("Phone number must not be set as String", "String Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                else if(!(Int32.TryParse(txtphonenumber.Text, out int convertedAge)))
+                {
+                    MessageBox.Show("Age must not be set as String", "String Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 else
                 {
                     try
