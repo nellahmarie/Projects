@@ -17,6 +17,13 @@ namespace YouTuDe.Admin
         private int id;
         private string profile;
 
+        private int pendingDriverCount;
+        private string[] pendingDriverFirstname = new string[100];
+        private string[] pendingDriverLastname = new string[100];
+        private string[] pendingDriverAge = new string[100];
+        private string[] pendingDriverProfile = new string[100];
+        private string[] pendingDriverNumber = new string[100];
+
         //for string count
         int count;
         string name;
@@ -35,6 +42,8 @@ namespace YouTuDe.Admin
             Allignment();
 
             lblfullname.Text = Login.firstname + " " + Login.lastname;
+
+            GeneratePendingDrivers();
         }
 
         public void Allignment()
@@ -306,6 +315,70 @@ namespace YouTuDe.Admin
         {
             btnLogout.BackColor = Color.FromArgb(28, 33, 32);
             btnLogout.ForeColor = Color.FromArgb(255, 222, 89);
+        }
+
+        private void GeneratePendingDrivers()
+        {
+            flowLayoutPanelPendingDrivers.Controls.Clear();
+
+            try
+            {
+                Connection.Connection.DB();
+                Function.Function.gen = "SELECT COUNT(*) FROM pendingDriver";
+                Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
+                Function.Function.reader = Function.Function.command.ExecuteReader();
+
+                if (Function.Function.reader.HasRows)
+                {
+                    Function.Function.reader.Read();
+
+                    string count = Function.Function.reader.GetValue(0).ToString();
+                    pendingDriverCount = Convert.ToInt32(count);
+
+                    PendingDriverUserControl[] pendingDriverUserControl = new PendingDriverUserControl[pendingDriverCount];
+
+                    try
+                    {
+                        Connection.Connection.DB();
+                        Function.Function.gen = "SELECT * FROM pendingDriver";
+                        Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
+                        Function.Function.reader = Function.Function.command.ExecuteReader();
+
+                        if (Function.Function.reader.HasRows)
+                        {
+                            for (int i = 0; i < pendingDriverUserControl.Length; i++)
+                            {
+                                Function.Function.reader.Read();
+
+                                pendingDriverFirstname[i] = Function.Function.reader.GetValue(1).ToString();
+                                pendingDriverLastname[i] = Function.Function.reader.GetValue(2).ToString();
+                                pendingDriverAge[i] = Function.Function.reader.GetValue(3).ToString();
+                                pendingDriverProfile[i] = Function.Function.reader.GetValue(4).ToString();
+                                pendingDriverNumber[i] = Function.Function.reader.GetValue(5).ToString();
+
+                                //Initialize
+                                pendingDriverUserControl[i] = new PendingDriverUserControl();
+
+                                //Adding Data
+                                pendingDriverUserControl[i].Fullname = pendingDriverFirstname[i] + " " + pendingDriverLastname[i];
+                                pendingDriverUserControl[i].age = pendingDriverAge[i];
+                                pendingDriverUserControl[i].number = pendingDriverNumber[i];
+                                pendingDriverUserControl[i].Profile = pendingDriverProfile[i];
+
+                                flowLayoutPanelPendingDrivers.Controls.Add(pendingDriverUserControl[i]);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

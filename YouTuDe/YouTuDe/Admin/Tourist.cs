@@ -318,7 +318,7 @@ namespace YouTuDe.Admin
             btnLogout.ForeColor = Color.FromArgb(255, 222, 89);
         }
 
-        public void GenerateTourist()
+        private void GenerateTourist()
         {
             flowLayoutPanelTourist.Controls.Clear();
 

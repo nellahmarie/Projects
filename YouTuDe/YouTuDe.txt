@@ -25,6 +25,5 @@ CREATE TABLE pendingDriver(
 		userNumber varchar(20) NOT NULL,
 		username varchar(20) NOT NULL,
 		password varchar(20) NOT NULL,
-		rolename varchar(20) NOT NULL,
-		verCode varchar(6)
+		rolename varchar(20) NOT NULL
 );

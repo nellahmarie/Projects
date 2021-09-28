@@ -255,9 +255,9 @@ namespace YouTuDe.Admin
             // flowLayoutPanelTourist
             // 
             this.flowLayoutPanelTourist.AutoScroll = true;
-            this.flowLayoutPanelTourist.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanelTourist.Location = new System.Drawing.Point(-5, -2);
             this.flowLayoutPanelTourist.Name = "flowLayoutPanelTourist";
-            this.flowLayoutPanelTourist.Size = new System.Drawing.Size(347, 307);
+            this.flowLayoutPanelTourist.Size = new System.Drawing.Size(358, 318);
             this.flowLayoutPanelTourist.TabIndex = 0;
             // 
             // Tourist

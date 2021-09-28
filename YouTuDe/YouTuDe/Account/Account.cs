@@ -101,7 +101,7 @@ namespace YouTuDe.Account
 
                                 try
                                 {
-                                    File.Copy(imageFile, Path.Combine(@"C:\Users\gubot\source\repos\YouTuDe\YouTuDe\bin\Debug\Profile", profile));
+                                    File.Copy(imageFile, Path.Combine(@"C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\bin\Debug\Profile", profile));
                                 }
                                 catch (Exception ex)
                                 {
@@ -133,7 +133,7 @@ namespace YouTuDe.Account
 
                                 try
                                 {
-                                    File.Copy(imageFile, Path.Combine(@"C:\Users\gubot\source\repos\YouTuDe\YouTuDe\bin\Debug\Profile", profile));
+                                    File.Copy(imageFile, Path.Combine(@"C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\bin\Debug\Profile", profile));
                                 }
                                 catch (Exception ex)
                                 {

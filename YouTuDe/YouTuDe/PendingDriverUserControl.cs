@@ -11,19 +11,19 @@ using System.Windows.Forms;
 
 namespace YouTuDe
 {
-    public partial class TouristUserControl : UserControl
+    public partial class PendingDriverUserControl : UserControl
     {
         public string Fullname;
         public string age;
         public string number;
         public string Profile;
 
-        public TouristUserControl()
+        public PendingDriverUserControl()
         {
             InitializeComponent();
         }
 
-        private void TouristUserControl_Load(object sender, EventArgs e)
+        private void PendingDriverUserControl_Load(object sender, EventArgs e)
         {
             lblfullname.Text = Fullname;
             lblage.Text = age;
@@ -42,7 +42,6 @@ namespace YouTuDe
             {
                 MessageBox.Show(ex.Message);
             }
-            
         }
     }
 }
