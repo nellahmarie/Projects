@@ -89,7 +89,28 @@ namespace YouTuDe
 
         private void btndeny_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show(userid + "\n" + firstname + " " + lastname + "\n" + age + "\n" + number + "\n" + Profile + "\n" + Username + "\n" + Password + "\n" + Rolename);
+            string text = "Are you sure you want to delete this drivers application?";
+            string caption = "Delete";
+            DialogResult result = MessageBox.Show(text, caption, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    Connection.Connection.DB();
+                    Function.Function.gen = "DELETE FROM pendingDriver WHERE userid = '" + userid + "' ";
+                    Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
+                    Function.Function.command.ExecuteNonQuery();
+
+                    Admin.Drivers drivers = new Admin.Drivers();
+                    drivers.RefreshFlowLayout();
+
+                    Connection.Connection.conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }

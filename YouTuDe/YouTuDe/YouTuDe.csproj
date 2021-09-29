@@ -52,6 +52,12 @@
     <Compile Include="Account\Account.Designer.cs">
       <DependentUpon>Account.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminViewSpotsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminViewSpotsUserControl.Designer.cs">
+      <DependentUpon>AdminViewSpotsUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Reports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </Compile>
     <EmbeddedResource Include="Account\Account.resx">
       <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewSpotsUserControl.resx">
+      <DependentUpon>AdminViewSpotsUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
