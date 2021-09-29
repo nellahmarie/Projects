@@ -334,6 +334,39 @@ namespace YouTuDe.Admin
             {
                 var file = Path.GetFileName(imageFile);
                 spotProfile = file;
+                if (String.IsNullOrWhiteSpace(txtattraction.Text) == true)
+                {
+                    MessageBox.Show("Tourist Attraction must not be set as Null or WhiteSpace, Please try Again!", "Null | WhiteSpace", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if(String.IsNullOrWhiteSpace(txtdestination.Text) == true)
+                {
+                    MessageBox.Show("Destination must not be set as Null or WhiteSpace, Please try Again!", "Null | WhiteSpace", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (String.IsNullOrWhiteSpace(txtcost.Text) == true)
+                {
+                    MessageBox.Show("cost must not be set as Null or WhiteSpace, Please try Again!", "Null | WhiteSpace", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if(String.IsNullOrEmpty(spotProfile) == true)
+                {
+                    MessageBox.Show("Image File not Found!", "Empty", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if(String.IsNullOrWhiteSpace(txtdescription.Text) == true)
+                {
+                    MessageBox.Show("Description must not be set as Null or WhiteSpace, Please try Again!", "Null | WhiteSpace", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    if (!(Double.TryParse(txtcost.Text, out Double sample)))
+                    {
+                        MessageBox.Show("Cost Input is not a Curreny-Type value, Please try Again!", "Currency Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        double money = Convert.ToDouble(txtcost.Text);
+                        Double convertedMoney = Convert.ToDouble(String.Format("{0:00.00}", money));
+                        MessageBox.Show("" + convertedMoney);
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -354,12 +387,10 @@ namespace YouTuDe.Admin
             }
         }
 
-        public void SampleFormatting()
+        private void txtdescription_TextChanged(object sender, EventArgs e)
         {
-            double money = 489.98047565;
-            double convertedMoney= Convert.ToDouble(String.Format("{0:00.00}", money));
+            txtdescription.MaxLength = 30;
         }
-
 
     }
 }

@@ -47,19 +47,21 @@ namespace YouTuDe.Admin
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pbimage = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.btnchoose = new System.Windows.Forms.Button();
-            this.btnsave = new System.Windows.Forms.Button();
-            this.btnupdate = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtdescription = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btnchoose = new System.Windows.Forms.Button();
+            this.txtcost = new System.Windows.Forms.TextBox();
+            this.txtdestination = new System.Windows.Forms.TextBox();
+            this.txtattraction = new System.Windows.Forms.TextBox();
+            this.pbimage = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).BeginInit();
             this.panel2.SuspendLayout();
@@ -294,14 +296,16 @@ namespace YouTuDe.Admin
             // tabPage2
             // 
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.txtdescription);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.btnupdate);
             this.tabPage2.Controls.Add(this.btnsave);
             this.tabPage2.Controls.Add(this.btnchoose);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.txtcost);
+            this.tabPage2.Controls.Add(this.txtdestination);
+            this.tabPage2.Controls.Add(this.txtattraction);
             this.tabPage2.Controls.Add(this.pbimage);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label5);
@@ -315,96 +319,45 @@ namespace YouTuDe.Admin
             this.tabPage2.Text = "Add";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // label9
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Tourist Attraction:";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(25, 261);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(181, 12);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Desciption\'s Max Length is 30 only";
             // 
-            // label4
+            // label8
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 46);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Destination:";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(6, 248);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 13);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Note:";
             // 
-            // label5
+            // txtdescription
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 78);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Image:";
+            this.txtdescription.Location = new System.Drawing.Point(57, 230);
+            this.txtdescription.Name = "txtdescription";
+            this.txtdescription.Size = new System.Drawing.Size(194, 20);
+            this.txtdescription.TabIndex = 12;
+            this.txtdescription.TextChanged += new System.EventHandler(this.txtdescription_TextChanged);
             // 
-            // label6
+            // label7
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(189, 79);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Cost: Php";
-            // 
-            // pbimage
-            // 
-            this.pbimage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbimage.Location = new System.Drawing.Point(66, 94);
-            this.pbimage.Name = "pbimage";
-            this.pbimage.Size = new System.Drawing.Size(100, 82);
-            this.pbimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbimage.TabIndex = 4;
-            this.pbimage.TabStop = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(130, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(153, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(96, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(171, 20);
-            this.textBox2.TabIndex = 6;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(252, 75);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(74, 20);
-            this.textBox3.TabIndex = 7;
-            // 
-            // btnchoose
-            // 
-            this.btnchoose.Location = new System.Drawing.Point(112, 182);
-            this.btnchoose.Name = "btnchoose";
-            this.btnchoose.Size = new System.Drawing.Size(75, 23);
-            this.btnchoose.TabIndex = 8;
-            this.btnchoose.Text = "Choose File:";
-            this.btnchoose.UseVisualStyleBackColor = true;
-            this.btnchoose.Click += new System.EventHandler(this.btnchoose_Click);
-            // 
-            // btnsave
-            // 
-            this.btnsave.Location = new System.Drawing.Point(286, 258);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(59, 23);
-            this.btnsave.TabIndex = 9;
-            this.btnsave.Text = "SAVE";
-            this.btnsave.UseVisualStyleBackColor = true;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(15, 214);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(117, 13);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Description (Short):";
             // 
             // btnupdate
             // 
@@ -417,22 +370,96 @@ namespace YouTuDe.Admin
             this.btnupdate.UseVisualStyleBackColor = true;
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
-            // label7
+            // btnsave
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(15, 214);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(117, 13);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Description (Short):";
+            this.btnsave.Location = new System.Drawing.Point(286, 258);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(59, 23);
+            this.btnsave.TabIndex = 9;
+            this.btnsave.Text = "SAVE";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
-            // textBox4
+            // btnchoose
             // 
-            this.textBox4.Location = new System.Drawing.Point(57, 230);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 20);
-            this.textBox4.TabIndex = 12;
+            this.btnchoose.Location = new System.Drawing.Point(112, 182);
+            this.btnchoose.Name = "btnchoose";
+            this.btnchoose.Size = new System.Drawing.Size(75, 23);
+            this.btnchoose.TabIndex = 8;
+            this.btnchoose.Text = "Choose File:";
+            this.btnchoose.UseVisualStyleBackColor = true;
+            this.btnchoose.Click += new System.EventHandler(this.btnchoose_Click);
+            // 
+            // txtcost
+            // 
+            this.txtcost.Location = new System.Drawing.Point(252, 75);
+            this.txtcost.Name = "txtcost";
+            this.txtcost.Size = new System.Drawing.Size(74, 20);
+            this.txtcost.TabIndex = 7;
+            // 
+            // txtdestination
+            // 
+            this.txtdestination.Location = new System.Drawing.Point(96, 42);
+            this.txtdestination.Name = "txtdestination";
+            this.txtdestination.Size = new System.Drawing.Size(171, 20);
+            this.txtdestination.TabIndex = 6;
+            // 
+            // txtattraction
+            // 
+            this.txtattraction.Location = new System.Drawing.Point(130, 10);
+            this.txtattraction.Name = "txtattraction";
+            this.txtattraction.Size = new System.Drawing.Size(153, 20);
+            this.txtattraction.TabIndex = 5;
+            // 
+            // pbimage
+            // 
+            this.pbimage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbimage.Location = new System.Drawing.Point(66, 94);
+            this.pbimage.Name = "pbimage";
+            this.pbimage.Size = new System.Drawing.Size(100, 82);
+            this.pbimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbimage.TabIndex = 4;
+            this.pbimage.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(189, 79);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Cost: Php";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(15, 78);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Image:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(15, 46);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Destination:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(15, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tourist Attraction:";
             // 
             // Spots
             // 
@@ -487,13 +514,15 @@ namespace YouTuDe.Admin
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pbimage;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtcost;
+        private System.Windows.Forms.TextBox txtdestination;
+        private System.Windows.Forms.TextBox txtattraction;
         private System.Windows.Forms.Button btnchoose;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnupdate;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtdescription;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }
