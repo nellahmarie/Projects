@@ -14,6 +14,15 @@ namespace YouTuDe.Admin
 {
     public partial class Spots : Form
     {
+
+        //Spot Image
+        private string imageFile;
+
+        //Spot Profile
+        private string spotProfile;
+
+
+        //User
         private int id;
         private string profile;
 
@@ -307,5 +316,50 @@ namespace YouTuDe.Admin
             btnLogout.BackColor = Color.FromArgb(28, 33, 32);
             btnLogout.ForeColor = Color.FromArgb(255, 222, 89);
         }
+
+        private void btnchoose_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp;) | *.jpg; *.jpeg; *.gif; *.bmp;";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                imageFile = open.FileName;
+                pbimage.Image = new Bitmap(imageFile);
+            }
+        }
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var file = Path.GetFileName(imageFile);
+                spotProfile = file;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var file = Path.GetFileName(imageFile);
+                spotProfile = file;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void SampleFormatting()
+        {
+            double money = 489.98047565;
+            double convertedMoney= Convert.ToDouble(String.Format("{0:00.00}", money));
+        }
+
+
     }
 }

@@ -27,3 +27,12 @@ CREATE TABLE pendingDriver(
 		password varchar(20) NOT NULL,
 		rolename varchar(20) NOT NULL
 );
+
+CREATE TABLE Attractions(
+		attractionid INT PRIMARY KEY IDENTITY(1, 1),
+		touristAttraction varchar(50) NOT NULL,
+		touristDestination varchar(50) NOT NULL,
+		attractionImage varchar(1000) NOT NULL,
+		attractionCost MONEY NOT NULL,
+		attractionDescription varchar(50) NOT NULL
+);

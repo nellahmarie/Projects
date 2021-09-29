@@ -58,6 +58,8 @@ namespace YouTuDe.Admin
             this.btnchoose = new System.Windows.Forms.Button();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).BeginInit();
             this.panel2.SuspendLayout();
@@ -292,6 +294,8 @@ namespace YouTuDe.Admin
             // tabPage2
             // 
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.btnupdate);
             this.tabPage2.Controls.Add(this.btnsave);
             this.tabPage2.Controls.Add(this.btnchoose);
@@ -315,7 +319,7 @@ namespace YouTuDe.Admin
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 19);
+            this.label3.Location = new System.Drawing.Point(15, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 13);
             this.label3.TabIndex = 0;
@@ -325,7 +329,7 @@ namespace YouTuDe.Admin
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 51);
+            this.label4.Location = new System.Drawing.Point(15, 46);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 13);
             this.label4.TabIndex = 1;
@@ -335,7 +339,7 @@ namespace YouTuDe.Admin
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 83);
+            this.label5.Location = new System.Drawing.Point(15, 78);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 2;
@@ -345,7 +349,7 @@ namespace YouTuDe.Admin
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(27, 231);
+            this.label6.Location = new System.Drawing.Point(189, 79);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 13);
             this.label6.TabIndex = 3;
@@ -354,7 +358,7 @@ namespace YouTuDe.Admin
             // pbimage
             // 
             this.pbimage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbimage.Location = new System.Drawing.Point(81, 99);
+            this.pbimage.Location = new System.Drawing.Point(66, 94);
             this.pbimage.Name = "pbimage";
             this.pbimage.Size = new System.Drawing.Size(100, 82);
             this.pbimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -363,33 +367,34 @@ namespace YouTuDe.Admin
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 15);
+            this.textBox1.Location = new System.Drawing.Point(130, 10);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(153, 20);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(111, 47);
+            this.textBox2.Location = new System.Drawing.Point(96, 42);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(171, 20);
             this.textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(90, 227);
+            this.textBox3.Location = new System.Drawing.Point(252, 75);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(74, 20);
             this.textBox3.TabIndex = 7;
             // 
             // btnchoose
             // 
-            this.btnchoose.Location = new System.Drawing.Point(127, 187);
+            this.btnchoose.Location = new System.Drawing.Point(112, 182);
             this.btnchoose.Name = "btnchoose";
             this.btnchoose.Size = new System.Drawing.Size(75, 23);
             this.btnchoose.TabIndex = 8;
             this.btnchoose.Text = "Choose File:";
             this.btnchoose.UseVisualStyleBackColor = true;
+            this.btnchoose.Click += new System.EventHandler(this.btnchoose_Click);
             // 
             // btnsave
             // 
@@ -399,6 +404,7 @@ namespace YouTuDe.Admin
             this.btnsave.TabIndex = 9;
             this.btnsave.Text = "SAVE";
             this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // btnupdate
             // 
@@ -409,6 +415,24 @@ namespace YouTuDe.Admin
             this.btnupdate.TabIndex = 10;
             this.btnupdate.Text = "UPDATE";
             this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(15, 214);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(117, 13);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Description (Short):";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(57, 230);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(171, 20);
+            this.textBox4.TabIndex = 12;
             // 
             // Spots
             // 
@@ -469,5 +493,7 @@ namespace YouTuDe.Admin
         private System.Windows.Forms.Button btnchoose;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label7;
     }
 }
