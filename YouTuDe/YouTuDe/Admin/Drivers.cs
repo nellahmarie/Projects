@@ -17,6 +17,7 @@ namespace YouTuDe.Admin
         private int id;
         private string profile;
 
+        //Variables for pendingDrivers
         private int pendingDriverCount;
         private string[] pendingDriverUserId = new string[100];
         private string[] pendingDriverFirstname = new string[100];
@@ -24,6 +25,20 @@ namespace YouTuDe.Admin
         private string[] pendingDriverAge = new string[100];
         private string[] pendingDriverProfile = new string[100];
         private string[] pendingDriverNumber = new string[100];
+        private string[] pendingDriverUsername = new string[100];
+        private string[] pendingDriverPassword = new string[100];
+        private string[] pendingDriverRolename = new string[100];
+
+        private int driverCount;
+        private string[] driverUserID = new string[100];
+        private string[] driverUserFirstname = new string[100];
+        private string[] driverUserLastname = new string[100];
+        private string[] driverUserAge = new string[100];
+        private string[] driverUserProfile = new string[100];
+        private string[] driverUserNumber = new string[100];
+        private string[] driverUserUsername = new string[100];
+        private string[] driverUserPassword = new string[100];
+        private string[] driverUserRolename = new string[100];
 
         //for string count
         int count;
@@ -45,6 +60,7 @@ namespace YouTuDe.Admin
             lblfullname.Text = Login.firstname + " " + Login.lastname;
 
             GeneratePendingDrivers();
+            GenerateDrivers();
         }
 
         public void Allignment()
@@ -357,16 +373,23 @@ namespace YouTuDe.Admin
                                 pendingDriverAge[i] = Function.Function.reader.GetValue(3).ToString();
                                 pendingDriverProfile[i] = Function.Function.reader.GetValue(4).ToString();
                                 pendingDriverNumber[i] = Function.Function.reader.GetValue(5).ToString();
+                                pendingDriverUsername[i] = Function.Function.reader.GetValue(6).ToString();
+                                pendingDriverPassword[i] = Function.Function.reader.GetValue(7).ToString();
+                                pendingDriverRolename[i] = Function.Function.reader.GetValue(8).ToString();
 
                                 //Initialize
                                 pendingDriverUserControl[i] = new PendingDriverUserControl();
 
                                 //Adding Data
                                 pendingDriverUserControl[i].userid = pendingDriverUserId[i];
-                                pendingDriverUserControl[i].Fullname = pendingDriverFirstname[i] + " " + pendingDriverLastname[i];
+                                pendingDriverUserControl[i].firstname = pendingDriverFirstname[i];
+                                pendingDriverUserControl[i].lastname = pendingDriverLastname[i];
                                 pendingDriverUserControl[i].age = pendingDriverAge[i];
                                 pendingDriverUserControl[i].number = pendingDriverNumber[i];
                                 pendingDriverUserControl[i].Profile = pendingDriverProfile[i];
+                                pendingDriverUserControl[i].Username = pendingDriverUsername[i];
+                                pendingDriverUserControl[i].Password = pendingDriverPassword[i];
+                                pendingDriverUserControl[i].Rolename = pendingDriverRolename[i];
 
                                 flowLayoutPanelPendingDrivers.Controls.Add(pendingDriverUserControl[i]);
                             }
@@ -382,6 +405,86 @@ namespace YouTuDe.Admin
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void GenerateDrivers()
+        {
+            flowLayoutPanelDrivers.Controls.Clear();
+
+            try
+            {
+                Connection.Connection.DB();
+                Function.Function.gen = "SELECT COUNT(*) FROM users WHERE rolename = 'Driver' ";
+                Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
+                Function.Function.reader = Function.Function.command.ExecuteReader();
+
+                if (Function.Function.reader.HasRows)
+                {
+                    Function.Function.reader.Read();
+
+                    string count = Function.Function.reader.GetValue(0).ToString();
+                    driverCount = Convert.ToInt32(count);
+
+                    DriverUserControl[] driverUserControl = new DriverUserControl[driverCount];
+
+                    try
+                    {
+                        Connection.Connection.DB();
+                        Function.Function.gen = "SELECT * FROM users WHERE rolename = 'Driver' ";
+                        Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
+                        Function.Function.reader = Function.Function.command.ExecuteReader();
+
+                        if (Function.Function.reader.HasRows)
+                        {
+                            for (int i = 0; i < driverUserControl.Length; i++)
+                            {
+                                Function.Function.reader.Read();
+
+                                driverUserID[i] = Function.Function.reader.GetValue(0).ToString();
+                                driverUserFirstname[i] = Function.Function.reader.GetValue(1).ToString();
+                                driverUserLastname[i] = Function.Function.reader.GetValue(2).ToString();
+                                driverUserAge[i] = Function.Function.reader.GetValue(3).ToString();
+                                driverUserProfile[i] = Function.Function.reader.GetValue(7).ToString();
+                                driverUserNumber[i] = Function.Function.reader.GetValue(8).ToString();
+                                driverUserUsername[i] = Function.Function.reader.GetValue(9).ToString();
+                                driverUserPassword[i] = Function.Function.reader.GetValue(10).ToString();
+                                driverUserRolename[i] = Function.Function.reader.GetValue(11).ToString();
+
+                                //Initialize
+                                driverUserControl[i] = new DriverUserControl();
+
+                                //Adding Data
+                                driverUserControl[i].userid = driverUserID[i];
+                                driverUserControl[i].firstname = driverUserFirstname[i];
+                                driverUserControl[i].lastname = driverUserLastname[i];
+                                driverUserControl[i].age = driverUserAge[i];
+                                driverUserControl[i].Profile = driverUserProfile[i];
+                                driverUserControl[i].number = driverUserNumber[i];
+                                driverUserControl[i].Username = driverUserUsername[i];
+                                driverUserControl[i].Password = driverUserPassword[i];
+                                driverUserControl[i].Rolename = driverUserRolename[i];
+
+                                flowLayoutPanelDrivers.Controls.Add(driverUserControl[i]);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void RefreshFlowLayout()
+        {
+            Admin.Drivers drivers = new Admin.Drivers();
+            this.Visible = false;
+            drivers.Show();
         }
     }
 }

@@ -119,6 +119,12 @@
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Connection\Connection.cs" />
+    <Compile Include="DriverUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DriverUserControl.Designer.cs">
+      <DependentUpon>DriverUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forgot\Code.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Client\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverUserControl.resx">
+      <DependentUpon>DriverUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forgot\Code.resx">
       <DependentUpon>Code.cs</DependentUpon>

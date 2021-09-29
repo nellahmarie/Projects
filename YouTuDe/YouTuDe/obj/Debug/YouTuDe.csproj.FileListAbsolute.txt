@@ -38,3 +38,4 @@ C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Admin.Dri
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.Admin.Tourist.resources
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.TouristUserControl.resources
 C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.PendingDriverUserControl.resources
+C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\obj\Debug\YouTuDe.DriverUserControl.resources

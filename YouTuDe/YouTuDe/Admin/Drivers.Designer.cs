@@ -48,11 +48,13 @@ namespace YouTuDe.Admin
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelPendingDrivers = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanelDrivers = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -270,6 +272,7 @@ namespace YouTuDe.Admin
             // tabPage1
             // 
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage1.Controls.Add(this.flowLayoutPanelDrivers);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -298,6 +301,14 @@ namespace YouTuDe.Admin
             this.flowLayoutPanelPendingDrivers.Size = new System.Drawing.Size(349, 293);
             this.flowLayoutPanelPendingDrivers.TabIndex = 0;
             // 
+            // flowLayoutPanelDrivers
+            // 
+            this.flowLayoutPanelDrivers.AutoScroll = true;
+            this.flowLayoutPanelDrivers.Location = new System.Drawing.Point(-2, -2);
+            this.flowLayoutPanelDrivers.Name = "flowLayoutPanelDrivers";
+            this.flowLayoutPanelDrivers.Size = new System.Drawing.Size(350, 293);
+            this.flowLayoutPanelDrivers.TabIndex = 0;
+            // 
             // Drivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,6 +329,7 @@ namespace YouTuDe.Admin
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -345,5 +357,6 @@ namespace YouTuDe.Admin
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelPendingDrivers;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelDrivers;
     }
 }
