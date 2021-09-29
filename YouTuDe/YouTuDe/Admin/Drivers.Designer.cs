@@ -46,9 +46,9 @@ namespace YouTuDe.Admin
             this.panel3 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanelDrivers = new System.Windows.Forms.FlowLayoutPanel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelPendingDrivers = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanelDrivers = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).BeginInit();
             this.panel2.SuspendLayout();
@@ -263,10 +263,10 @@ namespace YouTuDe.Admin
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Location = new System.Drawing.Point(-5, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(358, 319);
+            this.tabControl1.Size = new System.Drawing.Size(363, 319);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -276,10 +276,18 @@ namespace YouTuDe.Admin
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(350, 293);
+            this.tabPage1.Size = new System.Drawing.Size(355, 293);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Lists";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanelDrivers
+            // 
+            this.flowLayoutPanelDrivers.AutoScroll = true;
+            this.flowLayoutPanelDrivers.Location = new System.Drawing.Point(-2, -2);
+            this.flowLayoutPanelDrivers.Name = "flowLayoutPanelDrivers";
+            this.flowLayoutPanelDrivers.Size = new System.Drawing.Size(355, 293);
+            this.flowLayoutPanelDrivers.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -288,7 +296,7 @@ namespace YouTuDe.Admin
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(350, 293);
+            this.tabPage2.Size = new System.Drawing.Size(355, 293);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Application";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -300,14 +308,6 @@ namespace YouTuDe.Admin
             this.flowLayoutPanelPendingDrivers.Name = "flowLayoutPanelPendingDrivers";
             this.flowLayoutPanelPendingDrivers.Size = new System.Drawing.Size(349, 293);
             this.flowLayoutPanelPendingDrivers.TabIndex = 0;
-            // 
-            // flowLayoutPanelDrivers
-            // 
-            this.flowLayoutPanelDrivers.AutoScroll = true;
-            this.flowLayoutPanelDrivers.Location = new System.Drawing.Point(-2, -2);
-            this.flowLayoutPanelDrivers.Name = "flowLayoutPanelDrivers";
-            this.flowLayoutPanelDrivers.Size = new System.Drawing.Size(350, 293);
-            this.flowLayoutPanelDrivers.TabIndex = 0;
             // 
             // Drivers
             // 

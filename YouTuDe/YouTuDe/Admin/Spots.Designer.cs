@@ -44,9 +44,14 @@ namespace YouTuDe.Admin
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -244,10 +249,43 @@ namespace YouTuDe.Admin
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.tabControl1);
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(353, 313);
             this.panel3.TabIndex = 0;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(-5, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(363, 319);
+            this.tabControl1.TabIndex = 5;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(355, 293);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Spots";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(355, 293);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Add";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Spots
             // 
@@ -267,6 +305,8 @@ namespace YouTuDe.Admin
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,5 +329,8 @@ namespace YouTuDe.Admin
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
