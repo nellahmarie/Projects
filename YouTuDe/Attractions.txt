@@ -7,3 +7,35 @@ Description (short): You can also swim with Whale Sharks
 
 Note:
    Description's Max Length is 35
+   
+   
+Attraction Name: Ogtong Cave
+Destination: Santa fe, Cebu
+Cost: Php 100.00
+Description (short): Ogtong Cave is a natural cave found in a privately-owned resort. Though this cave is not big enough to take some deep diving, surely it’s crystal blue, clearwater, and most of all it’s frigid, which is very refreshing to dip in. 
+
+Attraction Name: Guimbitayan
+Destination: Malapascua Island
+Cost: Php 1,862.14 per adult (price varies by group size).
+Description: It's hidden by many fisherman houses one of the more beautiful beaches in Malapascua. Many travellers who manage to find it will be awe by the beauty
+
+Attraction Name: Kawasan Falls
+Destination: Brgy. Matutinao, Badian
+Cost: 45 pesos per person
+Description: What is Kawasan Falls known for?
+Famous for its beautiful turquoise water, Kawasan Falls sits at the foot of Mantalongon Mountain Range, approximately one kilometer from the national road of Badian and at least four hours of trekking from Osmeña Peak of Dalaguete.
+
+Acttraction:Simala Parish Church
+Destination:rangay Simala, Natalio B. Bacalso S National Hwy, Sibonga, Cebu
+Cost: Fare is around 85 Php
+Description:Simala Shrine is a place of pilgrimage for devotees. Known as the Miraculous Mother Mary Church
+
+Acttraction:Pescador Island
+Destination:Malboal, Cebu
+Cost: 120 per person
+Description:island hopping tours usually cover all the aforementioned attractions in Pescador Island
+
+Acttraction: Sirao Flower Garden
+Destination: Lahug, Cebu
+Cost: Php 100.00 per head
+Description: also popularly called a 'Mini Amsterdam' by tourists and visitors because of the world-famous 'Keukenhof' flower garden. Well, Sirao is no less! The flowers here are varied species and they are so well kept, well-aligned and maintained.
