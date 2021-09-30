@@ -466,9 +466,10 @@ namespace YouTuDe.Admin
             // 
             // flowLayoutPanelSpots
             // 
-            this.flowLayoutPanelSpots.Location = new System.Drawing.Point(-6, -2);
+            this.flowLayoutPanelSpots.AutoScroll = true;
+            this.flowLayoutPanelSpots.Location = new System.Drawing.Point(-2, -2);
             this.flowLayoutPanelSpots.Name = "flowLayoutPanelSpots";
-            this.flowLayoutPanelSpots.Size = new System.Drawing.Size(360, 294);
+            this.flowLayoutPanelSpots.Size = new System.Drawing.Size(356, 294);
             this.flowLayoutPanelSpots.TabIndex = 0;
             // 
             // Spots

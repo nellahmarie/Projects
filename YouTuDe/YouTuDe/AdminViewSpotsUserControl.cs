@@ -12,6 +12,13 @@ namespace YouTuDe
 {
     public partial class AdminViewSpotsUserControl : UserControl
     {
+        public string attractionId;
+        public string touristAttraction;
+        public string touristDestination;
+        public string attractionImage;
+        public string attractionCost;
+        public string attractionDescription;
+
         public AdminViewSpotsUserControl()
         {
             InitializeComponent();

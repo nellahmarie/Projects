@@ -429,7 +429,7 @@ namespace YouTuDe.Admin
             try
             {
                 Connection.Connection.DB();
-                Function.Function.gen = "";
+                Function.Function.gen = "SELECT COUNT(*) FROM Attractions";
                 Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
                 Function.Function.reader = Function.Function.command.ExecuteReader();
 
@@ -439,6 +439,38 @@ namespace YouTuDe.Admin
 
                     string count = Function.Function.reader.GetValue(0).ToString();
                     attractionCount = Convert.ToInt32(count);
+
+                    AdminViewSpotsUserControl[] adminViewSpotsUserControl = new AdminViewSpotsUserControl[attractionCount];
+
+                    try
+                    {
+                        Connection.Connection.DB();
+                        Function.Function.gen = "SELECT * FROM Attractions";
+                        Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
+                        Function.Function.reader = Function.Function.command.ExecuteReader();
+
+                        if (Function.Function.reader.HasRows)
+                        {
+                            for (int i = 0; i < adminViewSpotsUserControl.Length; i++)
+                            {
+                                Function.Function.reader.Read();
+
+                                attractionId[i] = Function.Function.reader.GetValue(0).ToString();
+
+                                //Initialize
+                                adminViewSpotsUserControl[i] = new AdminViewSpotsUserControl();
+
+                                //Adding Data
+                                adminViewSpotsUserControl[i].attractionId = attractionId[i];
+
+                                flowLayoutPanelSpots.Controls.Add(adminViewSpotsUserControl[i]);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
             }
             catch (Exception ex)

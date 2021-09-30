@@ -33,6 +33,6 @@ CREATE TABLE Attractions(
 		touristAttraction varchar(50) NOT NULL,
 		touristDestination varchar(50) NOT NULL,
 		attractionImage varchar(1000) NOT NULL,
-		attractionCost MONEY NOT NULL,
+		attractionCost decimal(15, 2) NOT NULL,
 		attractionDescription varchar(50) NOT NULL
 );
