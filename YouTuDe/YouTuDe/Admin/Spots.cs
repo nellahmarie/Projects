@@ -53,6 +53,8 @@ namespace YouTuDe.Admin
             Allignment();
 
             lblfullname.Text = Login.firstname + " " + Login.lastname;
+
+            GenerateSpots();
         }
 
         public void Allignment()
@@ -374,7 +376,7 @@ namespace YouTuDe.Admin
                         try
                         {
                             double money = Convert.ToDouble(txtcost.Text);
-                            Double convertedMoney = Convert.ToDouble(String.Format("{0:00.00}", money));
+                            double convertedMoney = Convert.ToDouble(String.Format("{0:00.00}", money));
 
                             Connection.Connection.DB();
                             Function.Function.gen = "INSERT INTO Attractions(touristAttraction, touristDestination, attractionImage, attractionCost, attractionDescription) VALUES('"+txtattraction.Text+"',  '"+txtdestination.Text+"',  '"+spotProfile+"',  '"+convertedMoney+"',  '"+txtdescription.Text+"') ";
@@ -417,7 +419,32 @@ namespace YouTuDe.Admin
 
         private void txtdescription_TextChanged(object sender, EventArgs e)
         {
-            txtdescription.MaxLength = 30;
+            txtdescription.MaxLength = 55;
+        }
+
+        private void GenerateSpots()
+        {
+            flowLayoutPanelSpots.Controls.Clear();
+
+            try
+            {
+                Connection.Connection.DB();
+                Function.Function.gen = "";
+                Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
+                Function.Function.reader = Function.Function.command.ExecuteReader();
+
+                if (Function.Function.reader.HasRows)
+                {
+                    Function.Function.reader.Read();
+
+                    string count = Function.Function.reader.GetValue(0).ToString();
+                    attractionCount = Convert.ToInt32(count);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
     }

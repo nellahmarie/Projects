@@ -62,11 +62,13 @@ namespace YouTuDe.Admin
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.flowLayoutPanelSpots = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbimage)).BeginInit();
             this.SuspendLayout();
@@ -285,6 +287,7 @@ namespace YouTuDe.Admin
             // tabPage1
             // 
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage1.Controls.Add(this.flowLayoutPanelSpots);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -345,7 +348,7 @@ namespace YouTuDe.Admin
             // 
             this.txtdescription.Location = new System.Drawing.Point(57, 230);
             this.txtdescription.Name = "txtdescription";
-            this.txtdescription.Size = new System.Drawing.Size(194, 20);
+            this.txtdescription.Size = new System.Drawing.Size(269, 20);
             this.txtdescription.TabIndex = 12;
             this.txtdescription.TextChanged += new System.EventHandler(this.txtdescription_TextChanged);
             // 
@@ -461,6 +464,13 @@ namespace YouTuDe.Admin
             this.label3.TabIndex = 0;
             this.label3.Text = "Tourist Attraction:";
             // 
+            // flowLayoutPanelSpots
+            // 
+            this.flowLayoutPanelSpots.Location = new System.Drawing.Point(-6, -2);
+            this.flowLayoutPanelSpots.Name = "flowLayoutPanelSpots";
+            this.flowLayoutPanelSpots.Size = new System.Drawing.Size(360, 294);
+            this.flowLayoutPanelSpots.TabIndex = 0;
+            // 
             // Spots
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -481,6 +491,7 @@ namespace YouTuDe.Admin
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbimage)).EndInit();
@@ -524,5 +535,6 @@ namespace YouTuDe.Admin
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelSpots;
     }
 }
