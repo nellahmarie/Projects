@@ -74,6 +74,7 @@ namespace YouTuDe
             this.Controls.Add(this.panel1);
             this.Name = "AdminViewSpotsUserControl";
             this.Size = new System.Drawing.Size(462, 157);
+            this.Load += new System.EventHandler(this.AdminViewSpotsUserControl_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbprofile)).EndInit();

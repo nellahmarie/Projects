@@ -15,6 +15,15 @@ namespace YouTuDe.Admin
     public partial class Spots : Form
     {
 
+        //Variables for ViewSpots
+        private int attractionCount;
+        private string[] attractionId = new string[100];
+        private string[] touristAttraction = new string[100];
+        private string[] touristDestination = new string[100];
+        private string[] attractionImage = new string[100];
+        private string[] attractionCost = new string[100];
+        private string[] attractionDescription = new string[100];
+
         //Spot Image
         private string imageFile;
 
@@ -362,9 +371,28 @@ namespace YouTuDe.Admin
                     }
                     else
                     {
-                        double money = Convert.ToDouble(txtcost.Text);
-                        Double convertedMoney = Convert.ToDouble(String.Format("{0:00.00}", money));
-                        MessageBox.Show("" + convertedMoney);
+                        try
+                        {
+                            double money = Convert.ToDouble(txtcost.Text);
+                            Double convertedMoney = Convert.ToDouble(String.Format("{0:00.00}", money));
+
+                            Connection.Connection.DB();
+                            Function.Function.gen = "INSERT INTO Attractions(touristAttraction, touristDestination, attractionImage, attractionCost, attractionDescription) VALUES('"+txtattraction.Text+"',  '"+txtdestination.Text+"',  '"+spotProfile+"',  '"+convertedMoney+"',  '"+txtdescription.Text+"') ";
+                            Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
+                            Function.Function.command.ExecuteNonQuery();
+
+                            Admin.Spots spots = new Admin.Spots();
+                            this.Visible = false;
+                            spots.Show();
+
+                            MessageBox.Show("Tourist Spot Added Successfully!", "Cebu Tourist Spot", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            Connection.Connection.conn.Close();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
                     }
                 }
             }
