@@ -345,6 +345,7 @@ namespace YouTuDe.Admin
             {
                 var file = Path.GetFileName(imageFile);
                 spotProfile = file;
+
                 if (String.IsNullOrWhiteSpace(txtattraction.Text) == true)
                 {
                     MessageBox.Show("Tourist Attraction must not be set as Null or WhiteSpace, Please try Again!", "Null | WhiteSpace", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -383,6 +384,15 @@ namespace YouTuDe.Admin
                             Function.Function.command = new SqlCommand(Function.Function.gen, Connection.Connection.conn);
                             Function.Function.command.ExecuteNonQuery();
 
+                            try
+                            {
+                                File.Copy(imageFile, Path.Combine(@"C:\Users\gubot\source\repos\Projects\YouTuDe\YouTuDe\bin\Debug\Attractions", spotProfile));
+                            }
+                            catch (Exception ex)
+                            {
+                                //Do Nothing
+                            }
+
                             Admin.Spots spots = new Admin.Spots();
                             this.Visible = false;
                             spots.Show();
@@ -419,7 +429,7 @@ namespace YouTuDe.Admin
 
         private void txtdescription_TextChanged(object sender, EventArgs e)
         {
-            txtdescription.MaxLength = 55;
+            txtdescription.MaxLength = 35;
         }
 
         private void GenerateSpots()
@@ -456,12 +466,23 @@ namespace YouTuDe.Admin
                                 Function.Function.reader.Read();
 
                                 attractionId[i] = Function.Function.reader.GetValue(0).ToString();
+                                touristAttraction[i] = Function.Function.reader.GetValue(1).ToString();
+                                touristDestination[i] = Function.Function.reader.GetValue(2).ToString();
+                                attractionImage[i] = Function.Function.reader.GetValue(3).ToString();
+                                attractionCost[i] = Function.Function.reader.GetValue(4).ToString();
+                                attractionDescription[i] = Function.Function.reader.GetValue(5).ToString();
+
 
                                 //Initialize
                                 adminViewSpotsUserControl[i] = new AdminViewSpotsUserControl();
 
                                 //Adding Data
                                 adminViewSpotsUserControl[i].attractionId = attractionId[i];
+                                adminViewSpotsUserControl[i].touristAttraction = touristAttraction[i];
+                                adminViewSpotsUserControl[i].touristDestination = touristDestination[i];
+                                adminViewSpotsUserControl[i].attractionImage = attractionImage[i];
+                                adminViewSpotsUserControl[i].attractionCost = attractionCost[i];
+                                adminViewSpotsUserControl[i].attractionDescription = attractionDescription[i];
 
                                 flowLayoutPanelSpots.Controls.Add(adminViewSpotsUserControl[i]);
                             }

@@ -348,7 +348,7 @@ namespace YouTuDe.Admin
             // 
             this.txtdescription.Location = new System.Drawing.Point(57, 230);
             this.txtdescription.Name = "txtdescription";
-            this.txtdescription.Size = new System.Drawing.Size(269, 20);
+            this.txtdescription.Size = new System.Drawing.Size(210, 20);
             this.txtdescription.TabIndex = 12;
             this.txtdescription.TextChanged += new System.EventHandler(this.txtdescription_TextChanged);
             // 
@@ -469,7 +469,7 @@ namespace YouTuDe.Admin
             this.flowLayoutPanelSpots.AutoScroll = true;
             this.flowLayoutPanelSpots.Location = new System.Drawing.Point(-2, -2);
             this.flowLayoutPanelSpots.Name = "flowLayoutPanelSpots";
-            this.flowLayoutPanelSpots.Size = new System.Drawing.Size(356, 294);
+            this.flowLayoutPanelSpots.Size = new System.Drawing.Size(356, 291);
             this.flowLayoutPanelSpots.TabIndex = 0;
             // 
             // Spots

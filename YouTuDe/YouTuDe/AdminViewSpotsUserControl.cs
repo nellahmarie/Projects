@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +27,25 @@ namespace YouTuDe
 
         private void AdminViewSpotsUserControl_Load(object sender, EventArgs e)
         {
+            lblattraction.Text = touristAttraction;
+            lbldestination.Text = touristDestination;
+            lblcost.Text = attractionCost;
+            lbldescription.Text = attractionDescription;
 
+            DisplayProfile();
+        }
+
+        private void DisplayProfile()
+        {
+            try
+            {
+                var image = Path.GetDirectoryName(Application.ExecutablePath) + "\\Attractions\\" + attractionImage;
+                pbprofile.Image = Image.FromFile(image);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

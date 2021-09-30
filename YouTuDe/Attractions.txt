@@ -1,0 +1,9 @@
+CEBU Tourist Attraction
+
+Attraction Name: Oslob Whale Shark Watching
+Destination:Oslob, Cebu
+Cost: Php 500.00
+Description (short): You can also swim with Whale Sharks
+
+Note:
+   Description's Max Length is 35
